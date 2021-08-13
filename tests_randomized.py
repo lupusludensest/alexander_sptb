@@ -10,6 +10,9 @@ from boxes_count import get_boxes_count
                              (9, 0, ZeroDivisionError),
                              (-3, 6, ValueError),
                              (2, -2, ValueError),
+                             ([], None, TypeError),
+                             (None, [], TypeError),
+                             ((1, 2), {1: '11'}, TypeError),
                          ])
 
 def test_negative(products_count, box_capacity, error):
