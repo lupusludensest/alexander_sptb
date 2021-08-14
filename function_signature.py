@@ -12,8 +12,10 @@
 # def get_boxes_count(products_count, box_capacity):
 
 import math
+import typing
 
-def get_boxes_count(products_count, box_capacity):
+
+def get_boxes_count(products_count: int, box_capacity: int) -> int:
     # Check if the input data are correct
     if type(products_count) != int or type(box_capacity) != int or products_count < 1 or box_capacity < 1:
         raise AssertionError('AssertionError') # Value unacceptable
