@@ -4,19 +4,19 @@ from function import get_boxes_count
 @pytest.mark.parametrize(['products_count', 'box_capacity', 'error'],
 [
  # Negative
- ("A", 6, ValueError),
- (6, "A", ValueError),
- (1.3, 6, ValueError),
- (6, 1.3, ValueError),
- (9, 0, ValueError),
- (0, 9, ValueError),
- (0, 0, ValueError),
- (-3, 6, ValueError),
- (2, -2, ValueError),
- ([], None, ValueError),
- (None, [], ValueError),
- ((1, 2), {1: '11'}, ValueError),
- ([1, 2], {1, 2, 3}, ValueError),
+ ("A", 6, AssertionError), # Value unacceptable
+ (6, "A", AssertionError), # Value unacceptable
+ (1.3, 6, AssertionError), # Value unacceptable
+ (6, 1.3, AssertionError), # Value unacceptable
+ (9, 0, AssertionError), # Value unacceptable
+ (0, 9, AssertionError), # Value unacceptable
+ (0, 0, AssertionError), # Value unacceptable
+ (-3, 6,AssertionError), # Value unacceptable
+ (2, -2, AssertionError), # Value unacceptable
+ ([], None, AssertionError), # Value unacceptable
+ (None, [], AssertionError), # Value unacceptable
+ ((1, 2), {1: '11'}, AssertionError), # Value unacceptable
+ ([1, 2], {1, 2, 3}, AssertionError), # Value unacceptable
 ])
 
 def test_negative(products_count, box_capacity, error):
