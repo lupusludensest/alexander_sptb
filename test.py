@@ -1,44 +1,39 @@
 import pytest
+from function import get_boxes_count
 
-from boxes_count import get_boxes_count
+@pytest.mark.parametrize(['products_count', 'box_capacity', 'error'],
+[
+ # Negative
+ ("A", 6, ValueError),
+ (6, "A", ValueError),
+ (1.3, 6, ValueError),
+ (6, 1.3, ValueError),
+ (9, 0, ValueError),
+ (0, 9, ValueError),
+ (0, 0, ValueError),
+ (-3, 6, ValueError),
+ (2, -2, ValueError),
+ ([], None, ValueError),
+ (None, [], ValueError),
+ ((1, 2), {1: '11'}, ValueError),
+ ([1, 2], {1, 2, 3}, ValueError),
+])
 
+def test_negative(products_count, box_capacity, error):
+    with pytest.raises(error):
+        get_boxes_count(products_count, box_capacity)
 
-def test_wrong_input_type_string():
-    with pytest.raises(TypeError):
-        get_boxes_count("A", 6)
-
-
-def test_wrong_input_type_float():
-    with pytest.raises(TypeError):
-        get_boxes_count(1.3, 6)
-
-
-def test_wrong_input_type_zero():
-    with pytest.raises(ZeroDivisionError):
-        get_boxes_count(9, 0)
-
-
-def test_wrong_input_negative_product():
-    with pytest.raises(ValueError):
-        get_boxes_count(-3, 6)
-
-
-def test_wrong_input_negative_capacity():
-    with pytest.raises(ValueError):
-        get_boxes_count(2, -2)
-
-
-def test_positive_int_equal():
-    assert get_boxes_count(10, 5) == 2
-
-
-def test_positive_int_not_equal():
-    assert get_boxes_count(12, 5) == 3
-
-
-def test_less_one_box():
-    assert get_boxes_count(4, 5) == 1
-
-
-def test_zero_product():
-    assert get_boxes_count(0, 5) == 0
+@pytest.mark.parametrize(['products_count', 'box_capacity', 'expected_value'],
+[
+ # Positive
+ (10, 5, 2),
+ (12, 5, 3),
+ (4, 5, 1),
+ (5, 10, 1),
+ (1, 5, 1),
+ (1, 1, 1),
+ (999, 1000, 1),
+ (999999999, 1000000000, 1),
+ ])
+def tests_positive(products_count, box_capacity, expected_value):
+    assert get_boxes_count(products_count, box_capacity) == expected_value

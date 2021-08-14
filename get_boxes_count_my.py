@@ -13,12 +13,19 @@
 
 import math
 
+products_count, box_capacity = input('Enter the product quantity: '), input('Enter the box capacity: ')
 def get_boxes_count(products_count, box_capacity):
-    # Check if the input data are correct
-    if type(products_count) != int or type(box_capacity) != int:
-        raise TypeError('The input data should be integer')
-    if products_count < 0 or box_capacity < 0:
-        raise ValueError('The input data should be positive')
-    if box_capacity == 0:
-        raise ZeroDivisionError('Zero division error, box_capacity should be non zero')
-    return math.ceil(products_count/box_capacity)
+    prdcts_cnt_int = int(products_count)
+    bx_cpcty_int = int(box_capacity)
+    print(type(products_count), type(box_capacity),type(prdcts_cnt_int), type(bx_cpcty_int))
+    if (type(prdcts_cnt_int)!=int or type(bx_cpcty_int)!=int or len(str(prdcts_cnt_int))==0 or len(str(bx_cpcty_int))==0 or bx_cpcty_int==0 or prdcts_cnt_int==0):
+        return 'AssertionError'
+    if type(prdcts_cnt_int)==int and type(bx_cpcty_int)==int:
+        return f'We need "{math.ceil(int(prdcts_cnt_int)/int(bx_cpcty_int))}" boxes'
+    else:
+        return 'AssertionError'
+print(get_boxes_count(products_count, box_capacity))
+
+
+
+

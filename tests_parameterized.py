@@ -1,5 +1,5 @@
 import pytest
-from boxes_count import get_boxes_count
+from get_boxes_count import get_boxes_count
 
 
 @pytest.mark.parametrize(['products_count', 'box_capacity', 'error'],
