@@ -4,27 +4,27 @@ from get_boxes_count import get_boxes_count
 
 
 def test_wrong_input_type_string():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # with-context manager
         get_boxes_count("A", 6)
 
 
 def test_wrong_input_type_float():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # with-context manager
         get_boxes_count(1.3, 6)
 
 
 def test_wrong_input_type_zero():
-    with pytest.raises(ZeroDivisionError):
+    with pytest.raises(ZeroDivisionError): # with-context manager
         get_boxes_count(9, 0)
 
 
 def test_wrong_input_negative_product():
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError): # with-context manager
         get_boxes_count(-3, 6)
 
 
 def test_wrong_input_negative_capacity():
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError): # with-context manager
         get_boxes_count(2, -2)
 
 

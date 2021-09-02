@@ -2,7 +2,19 @@ import pytest
 from get_boxes_count import get_boxes_count
 
 
-@pytest.mark.parametrize(['products_count', 'box_capacity', 'error'],
+@pytest.mark.parametrize(['products_count', 'box_capacity', 'expected_value'], # parametrization
+                        [
+                             # Positive
+                            (10, 5, 2),
+                             (12, 5, 3),
+                             (4, 5, 1),
+                             (5, 10, 1),
+                             (0, 5, 0),
+                         ])
+def tests_positive(products_count, box_capacity, expected_value):
+    assert get_boxes_count(products_count, box_capacity) == expected_value
+
+@pytest.mark.parametrize(['products_count', 'box_capacity', 'error'], # parametrization
                          [
                              # Negative
                              ("A", 6, TypeError),
@@ -16,17 +28,6 @@ from get_boxes_count import get_boxes_count
                          ])
 
 def test_negative(products_count, box_capacity, error):
-    with pytest.raises(error):
+    with pytest.raises(error): # with-context manager
         get_boxes_count(products_count, box_capacity)
 
-@pytest.mark.parametrize(['products_count', 'box_capacity', 'expected_value'],
-                        [
-                             # Positive
-                            (10, 5, 2),
-                             (12, 5, 3),
-                             (4, 5, 1),
-                             (5, 10, 1),
-                             (0, 5, 0),
-                         ])
-def tests_positive(products_count, box_capacity, expected_value):
-    assert get_boxes_count(products_count, box_capacity) == expected_value
