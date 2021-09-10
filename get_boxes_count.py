@@ -21,4 +21,5 @@ def get_boxes_count(products_count, box_capacity):
         raise ValueError('The input data should be positive')
     if box_capacity == 0:
         raise ZeroDivisionError('Zero division error, box_capacity should be non zero')
+
     return math.ceil(products_count/box_capacity)

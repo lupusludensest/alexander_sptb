@@ -5,7 +5,7 @@ from get_boxes_count import get_boxes_count
 @pytest.mark.parametrize(['products_count', 'box_capacity', 'expected_value'], # parametrization
                         [
                              # Positive
-                            (10, 5, 2),
+                             (10, 5, 2),
                              (12, 5, 3),
                              (4, 5, 1),
                              (5, 10, 1),
