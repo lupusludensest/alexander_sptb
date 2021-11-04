@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a50af457-5669-4a23-b995-9a79be250cd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a50af457-5669-4a23-b995-9a79be250cd4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +32,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests_parameterized.test_negative">
+  <component name="RunManager" selected="Python tests.pytest in tests_parameterized.py">
     <configuration name="algorithms_dt_19_aug_2020" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="alexander_sptb" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -153,6 +151,7 @@
       <workItem from="1631231171883" duration="2583000" />
       <workItem from="1635041788846" duration="798000" />
       <workItem from="1635518448564" duration="1862000" />
+      <workItem from="1635995011593" duration="244000" />
     </task>
     <servers />
   </component>
