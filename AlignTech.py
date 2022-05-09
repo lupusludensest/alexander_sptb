@@ -74,19 +74,19 @@ print(product_list_short_code(lst))   #  [0, 0, 0, 0, 0, 0, 0]
 # Tests to check functionality for both function:
 
 def test_wrong_input_type():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # context manager
         product_list("A")
 
 def test_wrong_input_type_short():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # context manager
         product_list_short_code("A")
 
 def test_wrong_input_list_elements_type():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # context manager
         product_list([1, 3, "4"])        
 
 def test_wrong_input_list_elements_type_short():
-    with pytest.raises(TypeError):
+    with pytest.raises(TypeError): # context manager
         product_list_short_code([1, 3, "4"])        
 
 def test_empty_list():
