@@ -9,7 +9,7 @@ current index position in the input list.
 
 """
 There are two different solutions. The time complexity of both of them is O(N*N).
-It is possible to change the algorithm and makes it O(N), if it is nessesary.
+It is possible to change the algorithm and makes it O(N), if it is necessary.
 For that additional information is needed:  
 What is the maximum length of the input list?
 What is the data in the list? float? integer? What is the maximum for elements of the list?
