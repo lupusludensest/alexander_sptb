@@ -14,12 +14,12 @@
 import math
 import typing
 
-product_count=int(input('Enter the product quantity: '))
-box_capacity=int(input('Enter the boxes capacity: '))
+product_count = int(input('Enter the product quantity: '))
+box_capacity = int(input('Enter the boxes capacity: '))
 def get_boxes_count(products_count: int, box_capacity: int) -> int: # signature
     # Check if the input data are correct
     if type(products_count) != int or type(box_capacity) != int or products_count < 1 or box_capacity < 1:
         raise AssertionError('AssertionError') # Value unacceptable
-    return (f'You need {math.ceil(products_count/box_capacity)} boxes')
+    return f'{math.ceil(products_count/box_capacity)}' # returns the result
 
 print(get_boxes_count(product_count, box_capacity))

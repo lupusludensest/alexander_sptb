@@ -1,7 +1,9 @@
+# to run this use command pytest -s -v test_signature.py
+
 import pytest
 from function_signature import get_boxes_count
 
-@pytest.mark.parametrize(['products_count', 'box_capacity', 'expected_value'],
+@pytest.mark.parametrize(['quantity', 'in_box', 'you_need_boxes'],
 [
  # Positive
  (10, 5, 2),
@@ -13,10 +15,10 @@ from function_signature import get_boxes_count
  (999, 1000, 1),
  (999999999, 1000000000, 1),
  ])
-def tests_positive(products_count, box_capacity, expected_value):
-    assert get_boxes_count(products_count, box_capacity) == expected_value
+def tests_positive(quantity, in_box, you_need_boxes):
+    assert get_boxes_count(quantity, in_box) == str(you_need_boxes)
 
-@pytest.mark.parametrize(['products_count', 'box_capacity', 'error'],
+@pytest.mark.parametrize(['quantity', 'in_box', 'error'],
 [
  # Negative
  ("A", 6, AssertionError), # Value unacceptable
@@ -34,6 +36,6 @@ def tests_positive(products_count, box_capacity, expected_value):
  ([1, 2], {1, 2, 3}, AssertionError), # Value unacceptable
 ])
 
-def test_negative(products_count, box_capacity, error):
+def test_negative(quantity, in_box, error):
     with pytest.raises(error):
-        get_boxes_count(products_count, box_capacity)
+        get_boxes_count(quantity, in_box)
