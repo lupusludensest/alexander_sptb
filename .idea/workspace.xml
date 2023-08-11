@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a50af457-5669-4a23-b995-9a79be250cd4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/alexander_sptb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/alexander_sptb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README/ALLURE_MANUAL.md" beforeDir="false" afterPath="$PROJECT_DIR$/README/ALLURE_MANUAL.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function_signature.py" beforeDir="false" afterPath="$PROJECT_DIR$/function_signature.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_signature.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_signature.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +128,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest in tests_parameterized.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest in test_with.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="alexander_sptb" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -146,17 +141,17 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests_parameterized.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_with.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest for test_signature.tests_positive" />
-        <item itemvalue="Python tests.pytest in test_signature.py" />
-        <item itemvalue="Python tests.pytest for test_signature.test_negative" />
+        <item itemvalue="Python tests.pytest in test_with.py" />
         <item itemvalue="Python.function_signature" />
-        <item itemvalue="Python tests.pytest in tests_parameterized.py" />
+        <item itemvalue="Python tests.pytest for test_signature.test_negative" />
+        <item itemvalue="Python tests.pytest in test_signature.py" />
       </list>
     </recent_temporary>
   </component>
@@ -183,6 +178,8 @@
       <workItem from="1652058568404" duration="3286000" />
       <workItem from="1685130913246" duration="2017000" />
       <workItem from="1691421505694" duration="3725000" />
+      <workItem from="1691507966067" duration="2098000" />
+      <workItem from="1691759839614" duration="32000" />
     </task>
     <servers />
   </component>
@@ -204,8 +201,9 @@
     <SUITE FILE_PATH="coverage/alexander_sptb$pytest_in_test_signature_py.coverage" NAME="pytest in test_signature.py Coverage Results" MODIFIED="1691507906562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alexander_sptb$pytest_in_tests_parameterized_py.coverage" NAME="pytest in tests_parameterized.py Coverage Results" MODIFIED="1691507572101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alexander_sptb$pytest_in_align_tech_py.coverage" NAME="pytest in align_tech.py Coverage Results" MODIFIED="1691507536810" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/alexander_sptb$function_signature.coverage" NAME="function_signature Coverage Results" MODIFIED="1691507627149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/alexander_sptb$pytest_for_test_signature_test_negative.coverage" NAME="pytest for test_signature.test_negative Coverage Results" MODIFIED="1691507652379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/alexander_sptb$pytest_for_test_signature_tests_positive.coverage" NAME="pytest for test_signature.tests_positive Coverage Results" MODIFIED="1691507567351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alexander_sptb$function_signature.coverage" NAME="function_signature Coverage Results" MODIFIED="1691508628053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alexander_sptb$pytest_for_test_signature_test_negative.coverage" NAME="pytest for test_signature.test_negative Coverage Results" MODIFIED="1691508334127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alexander_sptb$pytest_in_test_with_py.coverage" NAME="pytest in test_with.py Coverage Results" MODIFIED="1691508673732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alexander_sptb$pytest_for_test_signature_tests_positive.coverage" NAME="pytest for test_signature.tests_positive Coverage Results" MODIFIED="1691508678112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
