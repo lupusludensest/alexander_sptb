@@ -1,9 +1,7 @@
 # to run this use command pytest -s -v test_with.py
 
 import pytest
-
 from get_boxes_count import get_boxes_count
-
 
 def test_wrong_input_type_string():
     with pytest.raises(TypeError): # with-context manager
