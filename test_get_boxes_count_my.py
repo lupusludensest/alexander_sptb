@@ -26,7 +26,7 @@ def tests_positive(products_count, box_capacity, expected_value):
  (9, 0, AssertionError), # Value unacceptable
  (0, 9, AssertionError), # Value unacceptable
  (0, 0, AssertionError), # Value unacceptable
- (-3, 6,AssertionError), # Value unacceptable
+ (-3, 6, AssertionError), # Value unacceptable
  (2, -2, AssertionError), # Value unacceptable
  ([], None, AssertionError), # Value unacceptable
  (None, [], AssertionError), # Value unacceptable
